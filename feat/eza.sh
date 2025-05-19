@@ -10,8 +10,8 @@ alias ea='e -a'
 alias el='eza -lG --group-directories-first'
 alias ela='el -a'
 
-alias eg='eza -l --group-directories-first --git-ignore'
-alias ega='eza -la --group-directories-first --ignore-glob=".git"'
+alias eg='eza -l --group-directories-first --git-repos --git-ignore'
+alias ega='eza -la --group-directories-first --git-repos --ignore-glob=".git"'
 
 alias et='eza -l --sort=age'
 alias eta='et -a'
