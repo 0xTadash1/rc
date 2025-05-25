@@ -1,5 +1,7 @@
 export LESS
 
+# Initialize to empty to avoid duplication by `exec zsh`
+LESS=''
 LESS="${LESS:+$LESS }--RAW-CONTROL-CHARS --quit-if-one-screen"
 LESS="${LESS:+$LESS }--chop-long-lines"
 #LESS="${LESS:+$LESS }--wordwrap"
