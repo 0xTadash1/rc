@@ -3,7 +3,7 @@ export LESS
 LESS="${LESS:+$LESS }--RAW-CONTROL-CHARS --quit-if-one-screen"
 LESS="${LESS:+$LESS }--chop-long-lines"
 #LESS="${LESS:+$LESS }--wordwrap"
-LESS="${LESS:+$LESS }--rscroll='*n…'"
+LESS="${LESS:+$LESS }--rscroll=…"
 LESS="${LESS:+$LESS }--jump-target=.5 --incsearch --search-options=W --ignore-case"
 LESS="${LESS:+$LESS }--tilde"
 LESS="${LESS:+$LESS }--shift=4"
