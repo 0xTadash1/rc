@@ -1,3 +1,5 @@
+export LESS
+
 LESS="${LESS:+$LESS }--RAW-CONTROL-CHARS --quit-if-one-screen"
 LESS="${LESS:+$LESS }--chop-long-lines"
 #LESS="${LESS:+$LESS }--wordwrap"
