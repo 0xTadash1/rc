@@ -21,6 +21,6 @@ LESS="$LESS -DMCk\$"  # Mark letters in the status column -- Cyan / Black
 LESS="$LESS -DNK-\$"  # Line numbers -- bright-Black
 LESS="$LESS -DSkY\$"  # Search results -- Black / bright-Yellow
 LESS="$LESS -DWkM\$"  # Highlight by `-w` or `-W` -- Black / bright-Magenta
-LESS="$LESS -DRK-\$"  # `--rscroll` char -- bright-Black
+LESS="$LESS -DRw-\$"  # `--rscroll` char -- White
 LESS="$LESS -Dd+B-\$"  # Bold text -- (bold+) bright-Blue
 LESS="$LESS -Du+Y-\$"  # Underlined text -- (underline+) bright-Yellow
