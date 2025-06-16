@@ -6,7 +6,7 @@ gpg-connect-agent UPDATESTARTUPTTY /bye >/dev/null 2>&1
 # If ssh-agent is already running, prefer it.
 # Otherwise, use gpg-agent for SSH support if enabled.
 if [[ -z "$SSH_AGENT_PID" ]]; then
-	case "$(gpgconf --list-options 'gpg-agent' 2>/dev/null
+	case "$(gpgconf --list-options 'gpg-agent' 2>/dev/null \
 		| awk -F':' '$1=="enable-ssh-support" {print $10}')" in
 	'1')
 		if [[ "${gnupg_SSH_AUTH_SOCK_by:-0}" != "$$" ]]; then
