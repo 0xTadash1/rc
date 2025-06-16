@@ -1,5 +1,5 @@
 # Set GPG_TTY for gpg-agent to know the current terminal
-export GPG_TTY="$(tty)"
+export GPG_TTY="$TTY"
 gpg-connect-agent UPDATESTARTUPTTY /bye >/dev/null 2>&1
 
 # Configure SSH agent
