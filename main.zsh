@@ -2,6 +2,7 @@
 
 zstyle ':completion:*' menu select=2
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' file-sort mtime # default: alphabetical by `name`
 
 #autoload -U history-search-end
 #zle -N history-beginning-search-backward-end history-search-end
