@@ -24,17 +24,12 @@ alias grep='grep --color'
 alias mkdir='mkdir -pv'
 
 alias mv='mv -iv'
-alias cp='cp -riv'"$(
-	# Use CoW if possible
-	case "$(uname -s)" in
-	'Linux')
-		echo '--reflink=auto' ;;
-	'Darwin')
-		echo '-c' ;;
-	*)
-		: ;;
-	esac
-)"
+alias cp='cp -riv'
+# Use CoW if possible
+case "$(uname -s)" in
+	'Linux') alias 'cp --reflink=auto' ;;
+	'Darwin') alias 'cp -c' ;;
+esac
 alias rm='rm -rIv'  # `-I` == `--interactive=once`
 
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget/.wget-hsts"'
