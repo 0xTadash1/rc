@@ -4,7 +4,7 @@ svn() {
 		local _one="$1"
 		shift
 		'command' 'svn' \
-			"$_one" --config-dir="$XDG_CONFIG_HOME/subversion" "$@"
+			"$_one" --config-dir="${XDG_CONFIG_HOME:-$HOME/.config}/subversion" "$@"
 	else
 		'command' 'svn'
 	fi

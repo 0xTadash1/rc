@@ -32,7 +32,7 @@ case "$(uname -s)" in
 esac
 alias rm='rm -rIv'  # `-I` == `--interactive=once`
 
-alias wget='wget --hsts-file="$XDG_DATA_HOME/wget/.wget-hsts"'
+alias wget='wget --hsts-file="${XDG_DATA_HOME:-$HOME/.local/share}/wget/.wget-hsts"'
 
 alias suod='sudo'
 alias sduo='sudo'
@@ -45,13 +45,13 @@ alias gti='git'
 alias c='code'
 alias n='nvim'
 
-alias initlua='(cd "${XDG_CONFIG_HOME:-$HOME}/nvim" && n init.lua)'
-alias pluginslua='(cd "${XDG_CONFIG_HOME:-$HOME}/nvim" && n lua/plugins.lua)'
+alias initlua='(cd "${XDG_CONFIG_HOME:-$HOME/.config}/nvim" && n init.lua)'
+alias pluginslua='(cd "${XDG_CONFIG_HOME:-$HOME/.config}/nvim" && n lua/plugins.lua)'
 
 alias profile='(cd "$HOME" && $EDITOR .profile)'
 
 alias sshconf='(cd "$HOME/.ssh" && $EDITOR config)'
-alias gitconf='(cd "$XDG_CONFIG_HOME/git" && $EDITOR config)'
+alias gitconf='(cd "${XDG_CONFIG_HOME:-$HOME/.config}/git" && $EDITOR config)'
 
 # Parameter substitution is not used for compatibility reasons
 alias path='echo "$PATH" | tr ":" "\n"'

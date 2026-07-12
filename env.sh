@@ -4,4 +4,4 @@ export SAVEHIST=100000  # Max num of history to be saved in `HISTFILE`
 
 export SUDO_PROMPT='Password for [1;3;32m%p[m 🔐: '  # Bold;Italic;Green>%p
 
-export GNUPGHOME="${GNUPGHOME:-"$XDG_DATA_HOME/gnupg"}"
+export GNUPGHOME="${GNUPGHOME:-"${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"}"
